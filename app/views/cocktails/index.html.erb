@@ -1,2 +1,14 @@
-<h1>Cocktails#index</h1>
-<p>Find me in app/views/cocktails/index.html.erb</p>
+<head>
+ <meta name=“viewport” content=“width=device-width, initial-scale=1">
+ <meta http-equiv=“X-UA-Compatible” content=“IE=edge,chrome=1">
+</head>
+
+<h1>Alcoholic Choco's Cocktails</h1>
+
+<div class=“container”>
+  <div class=“row”>
+    <% @cocktails.each do |c| %>
+    <%= cocktail: c %>
+    <% end%>
+  </div>
+</div>
