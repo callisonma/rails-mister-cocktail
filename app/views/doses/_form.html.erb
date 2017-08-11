@@ -1,6 +1,8 @@
+<div class="banner" style="background-image: url('https://image.freepik.com/free-photo/watermelon-juice-with-copy-space_23-2147640789.jpg');">
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.error_notification %>
   <%= f.input :description %>
   <%= f.association :ingredient, collection: Ingredient.all %>
   <%= f.button :submit %>
 <% end %>
+</div>
