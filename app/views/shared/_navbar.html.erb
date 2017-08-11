@@ -1,9 +1,23 @@
-<div class ="nav-wrapper">
+<div class="navbar-wagon">
+
   <div class="title">
-    <h1>Alcoholic Choco's Cocktails</h1>
+    <h1 style="color: #00bcd4;"><span>Alcoholic Choco's Cocktails</span></h1>
   </div>
-  <div class="nav-cocktail">
-    <%= link_to "Home", root_path, class: "nav-link" %>
-    <%= link_to "Add Cocktail", new_cocktail_path , class: "nav-link" %>
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-wagon-brand" do %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <!-- Links -->
+    <%= link_to "Home", root_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Add Cocktail", new_cocktail_path , class: "navbar-wagon-item navbar-wagon-link" %>
+
+    <!-- Avatar with dropdown menu -->
+
   </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+
 </div>
