@@ -2,10 +2,11 @@
 <div class="card-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path @cocktail.photo.path, height: 300, width: 400, crop: :fill %>')">
 
     Cocktail name: <%= @cocktail.name %>
+    <%= link_to "Delete Cocktail", delete_cocktail_path(@cocktail),:method => :delete %>
     <% @cocktail.doses.each do |dose| %>
       <div>
       Ingredient: <%= dose.ingredient.name %>, Dose: <%= dose.description %>
-      <%= link_to "delete", delete_dose_path(dose),:method => :delete %>
+      <%= link_to "Delete Ingredient", delete_dose_path(dose),:method => :delete %>
       </div>
       <% end %>
 </div>
