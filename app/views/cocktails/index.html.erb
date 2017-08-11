@@ -8,7 +8,9 @@
 <div class=“container”>
   <div class=“row”>
     <% @cocktails.each do |c| %>
-    <%= cocktail: c %>
+    <div>
+    <%= link_to c.name, cocktail_path(c)  %>
+    </div>
     <% end%>
   </div>
 </div>
